@@ -3,10 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Christmas Calendar 2024 Link</title>
+    <style>
+        /* Import GT Walsheim Pro font */
+        @font-face {
+            font-family: 'GT Walsheim Pro';
+            src: url('path/to/GT-Walsheim-Pro-Regular.woff2') format('woff2'),
+                url('path/to/GT-Walsheim-Pro-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Set the body to take full height of the screen */
+        body {
+            margin: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            font-family: 'GT Walsheim Pro', sans-serif; /* Apply the custom font */
+            font-weight: lighter; /* Makes the font lighter */
+        }
+
+        /* Light blue top quarter */
+        .top-half {
+            background-color: #add8e6; /* Lighter blue color */
+            flex: 0 0 25%; /* Takes up the top quarter of the height */
+            text-align: center; /* Centers content horizontally */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centers content vertically */
+            padding-top: 100px; /* Moves content inside the top-half section down by 100px */
+        }
+
+        /* White bottom half */
+        .bottom-half {
+            background-color: white;
+            flex: 1; /* Takes up the remaining space */
+            text-align: center; /* Centers content horizontally */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centers content vertically */
+        }
+
+        img {
+            display: block; 
+            margin: 0 auto; /* Centers the image horizontally */
+            border-radius: 15px; /* Adds rounded corners to the image */
+            height: 200px; /* Keeps the image height */
+            width: auto; /* Maintains aspect ratio */
+        }
+
+        /* Container for text */
+        .text-box {
+            background-color: white;
+            padding: 20px; /* Adds space around the text */
+            display: inline-block; /* Ensures box is only as wide as necessary */
+            max-width: 80%; /* Optional: limits the width of the box */
+            margin: 0 auto; /* Centers the box horizontally */
+            border-radius: 15px; /* Adds rounded corners */
+        }
+
+        /* Style for hyperlinks inside the text box */
+        .text-box a {
+            text-decoration: none; /* Removes underline */
+            color: blue; /* Changes link color */
+            font-weight: lighter; /* Lighter font weight for links */
+        }
+
+        /* Optional: Hover effect for links */
+        .text-box a:hover {
+            color: darkblue;
+        }
+
+
+        
+    </style>
 </head>
 <body>
-    <h1>Hello world!</h1>
-    <a href="https://lbujac.github.io/christmas2024/">Link Text</a>
+    <div class="top-half">
+        <img src="picture.png" alt="Christmas Trees">
+        <div class="text-box">
+            <h1>Lindsey's Digital Advent Calendar</h1>
+            <h2>Use the advent calendar to check your wordsearch answers, and hear the day's Christmas song.</h2>
+            <a href="https://adventmyfriend.com/250173/d997e66173/">Lindsey's Digital Advent Calendar</a>
+        </div>
+    </div>
+
+    <div class="bottom-half">
+    </div>
 </body>
 </html>
