@@ -58,7 +58,7 @@
             background-color: white;
             padding: 20px; /* Adds space around the text */
             display: inline-block; /* Ensures box is only as wide as necessary */
-            max-width: 80%; /* Optional: limits the width of the box */
+            max-width: 50%; /* Makes the box narrower */
             margin: 0 auto; /* Centers the box horizontally */
             border-radius: 15px; /* Adds rounded corners */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
@@ -66,32 +66,22 @@
 
         /* Style for hyperlinks inside the text box */
         .text-box a {
+            display: inline-block; /* Ensures the link looks like a button */
             text-decoration: none; /* Removes underline */
-            color: blue; /* Changes link color */
-            font-weight: lighter; /* Lighter font weight for links */
-        }
-
-        /* Optional: Hover effect for links */
-        .text-box a:hover {
-            color: darkblue;
-        }
-
-        /* Button styling */
-        .button {
             background-color: #f0f0f0; /* Light grey button color */
             color: black; /* Text color */
-            border: none; /* Removes border */
-            padding: 15px 30px; /* Adjusts padding for the button */
             border-radius: 20px; /* Rounded edges */
-            font-size: 16px; /* Increases font size */
+            padding: 15px 30px; /* Button padding */
+            font-size: 16px; /* Font size */
             font-family: 'GT Walsheim Pro', sans-serif; /* Matches the font style */
             font-weight: lighter; /* Keeps text lightweight */
-            cursor: pointer; /* Changes cursor to pointer */
-            margin-top: 20px; /* Adds space between the button and text box */
+            cursor: pointer; /* Pointer cursor on hover */
+            margin-top: 20px; /* Adds space above the button */
             transition: all 0.3s ease; /* Smooth hover effect */
         }
 
-        .button:hover {
+        /* Hover effect for the hyperlink button */
+        .text-box a:hover {
             background-color: #e0e0e0; /* Slightly darker grey on hover */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
         }
@@ -103,8 +93,7 @@
         <div class="text-box">
             <h1>Lindsey's Digital Advent Calendar</h1>
             <h2>Use the advent calendar to check your wordsearch answers, and hear the day's Christmas song.</h2>
-            <a href="https://adventmyfriend.com/250173/d997e66173/">Lindsey's Digital Advent Calendar</a>
-            <button class="button">Update</button>
+            <a href="https://adventmyfriend.com/250173/d997e66173/">Go to Advent Calendar</a>
         </div>
     </div>
 
