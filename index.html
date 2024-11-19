@@ -22,46 +22,43 @@
             flex-direction: column;
             font-family: 'GT Walsheim Pro', sans-serif; /* Apply the custom font */
             font-weight: lighter; /* Makes the font lighter */
+            background-image: url('background-image.png'); /* Path to your background image */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
         }
 
-        /* Light blue top quarter */
+        /* Top-half section removed */
         .top-half {
-            background-color: #add8e6; /* Lighter blue color */
-            flex: 0 0 25%; /* Takes up the top quarter of the height */
+            flex: 0 0 15%; /* Takes up the top quarter of the height */
             text-align: center; /* Centers content horizontally */
             display: flex;
             flex-direction: column;
             justify-content: center; /* Centers content vertically */
-            padding-top: 50px; /* Moves content inside the top-half section down */
-        }
-
-        /* White bottom half */
-        .bottom-half {
-            background-color: white;
-            flex: 1; /* Takes up the remaining space */
-            text-align: center; /* Centers content horizontally */
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Centers content vertically */
+            padding-top: 10px; /* Moves content inside the top-half section down */
+            position: relative;
         }
 
         img {
-            display: block; 
+            display: block;
             margin: 0 auto; /* Centers the image horizontally */
-            border-radius: 15px; /* Adds rounded corners to the image */
-            height: 150px; /* Keeps the image height */
+            border-radius: 90px; /* Rounded corners */
+            height: 180px; /* Keeps the image height */
             width: auto; /* Maintains aspect ratio */
+            position: relative; /* Allows controlled positioning */
+            top: 75px; /* Moves the image downward to overlap with the text box */
+            z-index: 1; /* Ensures the image stays above the text box */
         }
 
         /* Container for text */
         .text-box {
-            background-color: white;
-            padding: 20px; /* Adds space around the text */
-            display: inline-block; /* Ensures box is only as wide as necessary */
-            max-width: 50%; /* Makes the box narrower */
-            margin: 0 auto; /* Centers the box horizontally */
-            border-radius: 15px; /* Adds rounded corners */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+            background-color: white; /* Fully white background */
+            padding: 20px;
+            display: inline-block;
+            max-width: 50%;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         /* Style for hyperlinks inside the text box */
@@ -91,9 +88,11 @@
     <div class="top-half">
         <img src="picture.png" alt="Christmas Trees">
         <div class="text-box">
+            <br></br>
             <h1>Lindsey's Digital Advent Calendar</h1>
             <h2>Use the advent calendar to check your wordsearch answers, and hear the day's Christmas song.</h2>
             <a href="https://adventmyfriend.com/250173/d997e66173/">Go to Advent Calendar</a>
+            <br></br>
         </div>
     </div>
 
