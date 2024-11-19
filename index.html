@@ -32,7 +32,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center; /* Centers content vertically */
-            padding-top: 100px; /* Moves content inside the top-half section down by 100px */
+            padding-top: 50px; /* Moves content inside the top-half section down */
         }
 
         /* White bottom half */
@@ -49,7 +49,7 @@
             display: block; 
             margin: 0 auto; /* Centers the image horizontally */
             border-radius: 15px; /* Adds rounded corners to the image */
-            height: 200px; /* Keeps the image height */
+            height: 150px; /* Keeps the image height */
             width: auto; /* Maintains aspect ratio */
         }
 
@@ -61,6 +61,7 @@
             max-width: 80%; /* Optional: limits the width of the box */
             margin: 0 auto; /* Centers the box horizontally */
             border-radius: 15px; /* Adds rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
         }
 
         /* Style for hyperlinks inside the text box */
@@ -75,8 +76,25 @@
             color: darkblue;
         }
 
+        /* Button styling */
+        .button {
+            background-color: #f0f0f0; /* Light grey button color */
+            color: black; /* Text color */
+            border: none; /* Removes border */
+            padding: 15px 30px; /* Adjusts padding for the button */
+            border-radius: 20px; /* Rounded edges */
+            font-size: 16px; /* Increases font size */
+            font-family: 'GT Walsheim Pro', sans-serif; /* Matches the font style */
+            font-weight: lighter; /* Keeps text lightweight */
+            cursor: pointer; /* Changes cursor to pointer */
+            margin-top: 20px; /* Adds space between the button and text box */
+            transition: all 0.3s ease; /* Smooth hover effect */
+        }
 
-        
+        .button:hover {
+            background-color: #e0e0e0; /* Slightly darker grey on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+        }
     </style>
 </head>
 <body>
@@ -86,6 +104,7 @@
             <h1>Lindsey's Digital Advent Calendar</h1>
             <h2>Use the advent calendar to check your wordsearch answers, and hear the day's Christmas song.</h2>
             <a href="https://adventmyfriend.com/250173/d997e66173/">Lindsey's Digital Advent Calendar</a>
+            <button class="button">Update</button>
         </div>
     </div>
 
@@ -93,3 +112,4 @@
     </div>
 </body>
 </html>
+
